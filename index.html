@@ -1,14 +1,312 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sahil Yadav | Full Stack Developer</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+}
+
+header{
+    width:100%;
+    padding:20px 10%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:fixed;
+    top:0;
+    background:#111827;
+    box-shadow:0 0 10px rgba(0,0,0,.4);
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#38bdf8;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:0 20px;
+}
+
+.hero h1{
+    font-size:60px;
+}
+
+.hero h2{
+    color:#38bdf8;
+    margin:15px 0;
+    font-size:32px;
+}
+
+.hero p{
+    max-width:700px;
+    margin:auto;
+    line-height:1.7;
+    color:#cbd5e1;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:14px 35px;
+    background:#38bdf8;
+    color:#000;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:30px;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:scale(1.08);
+}
+
+section{
+    padding:90px 10%;
+}
+
+.title{
+    text-align:center;
+    font-size:40px;
+    color:#38bdf8;
+    margin-bottom:40px;
+}
+
+.about p{
+    text-align:center;
+    max-width:800px;
+    margin:auto;
+    color:#cbd5e1;
+    line-height:1.8;
+}
+
+.skills{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+}
+
+.skill{
+    background:#1e293b;
+    padding:30px;
+    text-align:center;
+    border-radius:12px;
+    transition:.3s;
+}
+
+.skill:hover{
+    transform:translateY(-10px);
+    background:#38bdf8;
+    color:black;
+}
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.project{
+    background:#1e293b;
+    padding:25px;
+    border-radius:12px;
+    transition:.3s;
+}
+
+.project:hover{
+    transform:scale(1.05);
+}
+
+.project h3{
+    color:#38bdf8;
+    margin-bottom:15px;
+}
+
+.contact{
+    text-align:center;
+}
+
+.contact p{
+    margin:15px 0;
+    color:#cbd5e1;
+}
+
+footer{
+    text-align:center;
+    padding:25px;
+    background:#111827;
+    color:#94a3b8;
+}
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+}
+
+nav{
+    margin-top:15px;
+}
+
+.hero h1{
+    font-size:40px;
+}
+
+.hero h2{
+    font-size:24px;
+}
+
+}
+</style>
+
 </head>
 <body>
-    <h1>sahil
-        <p>sahil yadav</p>
-    </h1>
-    
+
+<header>
+
+<div class="logo">Sahil Yadav</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div>
+
+<h1>Hi, I'm Sahil Yadav</h1>
+
+<h2>Full Stack Developer</h2>
+
+<p>
+I am a passionate Full Stack Developer focused on creating responsive,
+modern, and user-friendly web applications using HTML, CSS, JavaScript,
+React, Node.js, Express, and MongoDB. I enjoy solving problems,
+building creative projects, and continuously improving my development skills.
+</p>
+
+<a href="#contact" class="btn">Hire Me</a>
+
+</div>
+
+</section>
+
+<section id="about" class="about">
+
+<h2 class="title">About Me</h2>
+
+<p>
+I am Sahil Yadav, an aspiring Full Stack Developer dedicated to building
+professional websites and web applications. My goal is to create clean,
+responsive, and high-performance digital experiences while continuously
+learning new technologies and improving my coding skills.
+</p>
+
+</section>
+
+<section id="skills">
+
+<h2 class="title">Skills</h2>
+
+<div class="skills">
+
+<div class="skill">HTML5</div>
+<div class="skill">CSS3</div>
+<div class="skill">JavaScript</div>
+<div class="skill">React</div>
+<div class="skill">Node.js</div>
+<div class="skill">Express.js</div>
+<div class="skill">MongoDB</div>
+<div class="skill">Git & GitHub</div>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2 class="title">Projects</h2>
+
+<div class="projects">
+
+<div class="project">
+<h3>Portfolio Website</h3>
+<p>
+A modern responsive portfolio website built using HTML and CSS.
+</p>
+</div>
+
+<div class="project">
+<h3>Task Management System</h3>
+<p>
+A full stack web application for managing daily tasks with authentication.
+</p>
+</div>
+
+<div class="project">
+<h3>Attendance Management</h3>
+<p>
+A smart attendance system with student records and analytics dashboard.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact" class="contact">
+
+<h2 class="title">Contact Me</h2>
+
+<p><strong>Name:</strong> Sahil Yadav</p>
+
+<p><strong>Role:</strong> Full Stack Developer</p>
+
+<p><strong>Email:</strong> your@email.com</p>
+
+<p><strong>GitHub:</strong> github.com/yadavsahil0045</p>
+
+</section>
+
+<footer>
+
+© 2026 Sahil Yadav | Full Stack Developer
+
+</footer>
+
 </body>
 </html>
